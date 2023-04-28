@@ -17,4 +17,4 @@ with open(budget_csv) as csvfile:
     print(csvreader)
     next
 
-    Total_Months=
+    Total_Months
