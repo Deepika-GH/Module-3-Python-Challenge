@@ -15,6 +15,4 @@ profit_losses=[]
 with open(budget_csv) as csvfile:
     csvreader=csv.reader(csvfile,delimiter=",")
     print(csvreader)
-    next
-
-    Total_Months
+    
