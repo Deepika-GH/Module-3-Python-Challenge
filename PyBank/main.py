@@ -50,13 +50,21 @@ with open(budget_csv) as csvfile,open(Analysis_file, "w") as outputfile:
       #calulate average change
 
     avg_change = round(ChangeTotal / (Total_Months - 1), 2)
-    
-    outputfile.write("Financial Analysis\n")
-    outputfile.write("-------------------------------------------------------\n")
-    outputfile.write(f"Total Months: {Total_Months}\n")
-    outputfile.write(f"Total: ${Total}\n")
-    outputfile.write(f"Average Change:{avg_change}\n")
-    outputfile.write(f"Greatest Increase in Profits: {Greatest_Increase['date']} (${Greatest_Increase['amount']})\n")
-    outputfile.write(f"Greatest Decrease in Profits: {Greatest_Decrease['date']} (${Greatest_Decrease['amount']})\n")
+
+    print(f"Financial Analysis")
+    print(f"-------------------------------------------------------")
+    print(f"Total Months: {Total_Months}")
+    print(f"Total: ${Total}")
+    print(f"Average Change:{avg_change}")
+    print(f"Greatest Increase in Profits: {Greatest_Increase['date']} (${Greatest_Increase['amount']})")
+    print(f"Greatest Decrease in Profits: {Greatest_Decrease['date']} (${Greatest_Decrease['amount']})")
+
+    outputfile.write(f"Financial Analysis\n")
+    outputfile.write(f"-------------------------------------------------------\n\n")
+    outputfile.write(f"Total Months: {Total_Months}\n\n")
+    outputfile.write(f"Total: ${Total}\n\n")
+    outputfile.write(f"Average Change:{avg_change}\n\n")
+    outputfile.write(f"Greatest Increase in Profits: {Greatest_Increase['date']} (${Greatest_Increase['amount']})\n\n")
+    outputfile.write(f"Greatest Decrease in Profits: {Greatest_Decrease['date']} (${Greatest_Decrease['amount']})\n\n")
 
     
